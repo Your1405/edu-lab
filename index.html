@@ -12,11 +12,23 @@
         <title>EduLab</title>
     </head>
     <body>
-        <header>
+        <header class="appbar">
             <a href="#"><img src="assets/icons/manual.svg" alt="Manual"></a>
             <h1>Hello Youri! <img src="assets/icons/waving-hand.svg" alt="waving hand"></h1>
-            <a href="#"><img src="assets/icons/profile.svg" alt="Profile"></a>
+            <a href="#"><img src="assets/icons/profile.svg" alt="Profile" onclick="openProfileSideBar()"></a>
         </header>
+        <aside id="profile-sidebar" hidden="true">
+            <div>
+                <img src="assets/icons/profile.svg" alt="Username"> Youri
+            </div>
+            <hr>
+            <div>
+                <a href="#"><img src="assets/icons/settings.svg" alt="settings"> Settings </a>
+            </div>
+            <div>
+                <a href="#"><img src="assets/icons/progress icon.svg" alt="progress"> Progress </a>
+            </div>
+        </aside>
         <section>
             <h1>Let's learn together!</h1>
             <form>
@@ -29,45 +41,71 @@
         <section>
             <h1>Categories</h1>
             <p>See all</p>
-            <a href="#">
-                <img src="assets/icons/math.svg" alt="Math">
-            </a>
-            <h2>Math</h2>
-            <a href="#">
-                <img src="assets/icons/biology.svg" alt="Biology">
-            </a>
-            <h2>Biology</h2>
-            <a href="#">
-                <img src="assets/icons/science.svg" alt="Science">
-            </a>
-            <h2>Science</h2>
-            <a href="#">
-                <img src="assets/icons/economics.svg" alt="Economics">
-            </a>
-            <h2>Economics</h2>
-            <a href="#">
-                <img src="assets/icons/geography.svg" alt="Geography">
-            </a>
-            <h2>Geography</h2>
-            <a href="#">
-                <img src="assets/icons/physics.svg" alt="Physics" >
-            </a>
-            <h2>Physics</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="assets/icons/math.svg" alt="Math">
+                    </a>
+                    <h2>Math</h2>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/icons/biology.svg" alt="Biology">
+                    </a>
+                    <h2>Biology</h2>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/icons/science.svg" alt="Science">
+                    </a>
+                    <h2>Science</h2>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/icons/economics.svg" alt="Economics">
+                    </a>
+                    <h2>Economics</h2>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/icons/geography.svg" alt="Geography">
+                    </a>
+                    <h2>Geography</h2>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/icons/physics.svg" alt="Physics" >
+                    </a>
+                    <h2>Physics</h2>
+                </li>
+            </ul>
         </section>
         <section>
             <h1>Progress</h1>
-                <h2>Physics</h2>
+            <ul>
+                <li>
+                    <h2>Physics</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <h3>Electricity</h3>
+                    <ul>
+                        <li>
+                            <h3>Electricity</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div></div>
                         <p>0/100</p>
                         <a href="#"><img src="assets/icons/play-button.svg" alt="play"></a>
-                    <h3>Electromagnetism</h3>
+                        </li>
+                        <li>
+                            <h3>Electromagnetism</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div></div>
                         <p>100/100</p>
                         <img src="assets/icons/complete-check.svg" alt="completed">
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="/pages/login.html">Login</a>
         </section>
+        <script src="scripts/ui.js"></script>
     </body>
 </html>
