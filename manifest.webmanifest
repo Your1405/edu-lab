@@ -1,0 +1,15 @@
+{
+    "name": "EduLab",
+    "short_name": "EduLab",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#F7B42C",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "assets/app-icon.png",
+            "sizes": "501x501",
+            "type": "image/png"
+        }
+    ]
+}
