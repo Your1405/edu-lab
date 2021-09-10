@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css">
         <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,20 +13,26 @@
     </head>
     <body>
         <header class="appbar">
-            <a href="#"><img src="assets/icons/manual.svg" alt="Manual"></a>
-            <h1>Hello Youri! <img src="assets/icons/waving-hand.svg" alt="waving hand"></h1>
-            <a href="#"><img src="assets/icons/profile.svg" alt="Profile" onclick="openProfileSideBar()"></a>
+            <a href="#"><img src="assets/icons/manual.svg" alt="Manual" class="header-icon" title="Manual"></a>
+            <h1>Hello <span class="username">Youri</span>! 👋</h1>
+            <a href="#"><img src="assets/icons/profile.svg" alt="Profile" class="header-icon" title="Profile and Settings" onclick="openProfileSideBar()"></a>
         </header>
         <aside id="profile-sidebar" hidden="true">
-            <div>
-                <img src="assets/icons/profile.svg" alt="Username"> Youri
+            <div class="sidebar-element sidebar-username">
+                <img src="assets/icons/profile.svg" width="24px" height="24px" alt="Username"> 
+                <span>Youri</span>
             </div>
-            <hr>
-            <div>
-                <a href="#"><img src="assets/icons/settings.svg" alt="settings"> Settings </a>
+            <div class="sidebar-element">
+                <a href="#">
+                    <img src="assets/icons/settings.svg" width="24px" height="24px" alt="settings"> 
+                </a>
+                <span>Settings</span>
             </div>
-            <div>
-                <a href="#"><img src="assets/icons/progress icon.svg" alt="progress"> Progress </a>
+            <div class="sidebar-element">
+                <a href="#">
+                    <img src="assets/icons/progress icon.svg" width="24px" height="24px" alt="progress">
+                </a>
+                <span>Progress</span>
             </div>
         </aside>
         <section>

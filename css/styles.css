@@ -2,3 +2,87 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+a:active {
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.appbar {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #A6A6AA;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.username {
+    color: #F7B42C;
+}
+
+.header-icon {
+    width: 32px;
+    height: 32px;
+}
+
+#profile-sidebar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 7%;
+    top: 8%;
+    background-color: white;
+    padding: 10px;
+    width: 30%;
+    box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, 35);
+    border-radius: 4px;
+}
+.sidebar-username {
+    border-bottom: 1px solid #A6A6AA;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+.sidebar-element span {
+    margin-left: 15%;
+} 
+
+.sidebar-element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+    /* colors: 
+    Primary / #F7B42C
+
+    Drop shadow
+    x: 1px
+    y: 2px
+    Blur: 2px
+    Shadow Color: #000000 35%
+
+    Border
+    Color: #FFFFFF
+    Stroke: #F1E4E4
+    Stroke size: 1px
+
+    TopBar: 
+    Color: #FAFAFA
+    Dropshadow color: #A6A6AA 100%
+    */
