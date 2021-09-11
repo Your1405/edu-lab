@@ -147,7 +147,7 @@ form {
     display: flex;
     flex-direction: row;
     align-content: space-between;
-    justify-content: space-between;
+    justify-content: flex-start;
     scrollbar-width: none;
     text-align: center;
     margin-top: -0.5em;
@@ -176,6 +176,18 @@ form {
     flex-direction: column;
 }
 
+.progress-header {
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #888080;
+}
+
+.progress-list {
+    margin-left: -1em;
+    margin-top: -1.8em;
+}
+
 .percentage-completed {
     width: 70%;
     height: 0.2em;
@@ -185,6 +197,23 @@ form {
 
 .item-progress {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-progress div, .item-progress p, .item-progress a{
+    margin-top: -1em;
+    margin-right: 1em;
+}
+
+.progress-item-subcategory-title, .progress-item-subcategory-subtitle {
+    
+}
+
+.progress-item-list-item {
+    margin-left: -2.5em;
+    margin-right: 1.5em;
+    border-bottom: 1px solid #888080;
 }
 
 /* .not-complete {
