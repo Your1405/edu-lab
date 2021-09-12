@@ -1,3 +1,4 @@
+//creates the profile sidebar functionality
 let profileSidebar = document.getElementById('profile-sidebar');
 
 function openProfileSideBar() {
