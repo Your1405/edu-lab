@@ -4,11 +4,31 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+        <!--Progressive Web App support-->
+        <link rel="shortcut icon" href="assets/icon-16-16.png" type="image/png">
         <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
+
+        <!--Android PWA Support-->
+        <meta name="theme-color" content="#FAFAFA">
+        <meta name="mobile-web-app-capable" content="yes">
+
+        <!--iOS PWA Support-->
+        <meta name="apple-mobile-web-app-title" content="EduLab">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#FAFAFA">
+        <link href="/assets/icon-120-120.png" rel="apple-touch-icon" sizes="120x120">
+        <link href="/assets/icon-180-180.png" rel="apple-touch-icon" sizes="180x180">
+        <link href="/assets/icon-180-180.png" rel="apple-touch-startup-image">
+
+
+        <link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+        <!--Font imports-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
         <title>EduLab</title>
     </head>
     <body>
@@ -20,7 +40,7 @@
         <aside id="profile-sidebar" hidden="true">
             <div class="sidebar-element sidebar-username">
                 <img src="assets/icons/profile.svg" width="24px" height="24px" alt="Username"> 
-                <span>Youri</span>
+                <span id="username">Youri</span>
             </div>
             <div class="sidebar-element">
                 <a href="#">
@@ -40,44 +60,44 @@
             <form>
                 <input type="search" placeholder="Search for a topic..." class="search">
                 <button type="submit" class="search-button">
-                    <img src="assets/icons/search.svg" alt="Search">
+                    <img src="assets/icons/search.svg" alt="Search" width="14px" height="14px">
                 </button>
             </form>
         </section>
         <section>
             <div class="categories-title">
                 <h1>Categories</h1>
-                <p onclick="seeAllCategories()">See all</p>
+                <p onclick="seeAllCategories()" id="see-all-button">See all</p>
             </div>
             <div class="category-container">
-                <ul class="category-list">
+                <ul class="category-list" id="category-list">
                     <li class="category-item">
                         <a href="#">
-                            <img src="assets/icons/math.svg" alt="Math">
+                            <img src="assets/icons/math.svg" alt="Math" width="48px" height="48px">
                         </a>
                         <h2>Math</h2>
                     </li>
                     <li class="category-item">
                         <a href="#">
-                            <img src="assets/icons/biology.svg" alt="Biology">
+                            <img src="assets/icons/biology.svg" alt="Biology" width="48px" height="48px">
                         </a>
                         <h2>Biology</h2>
                     </li>
                     <li class="category-item">
                         <a href="#">
-                            <img src="assets/icons/science.svg" alt="Science">
+                            <img src="assets/icons/science.svg" alt="Science" width="48px" height="48px">
                         </a>
                         <h2>Science</h2>
                     </li>
                     <li class="category-item">
                         <a href="#">
-                            <img src="assets/icons/geography.svg" alt="Geography">
+                            <img src="assets/icons/geography.svg" alt="Geography" width="48px" height="48px">
                         </a>
                         <h2>Geography</h2>
                     </li>
                     <li class="category-item">
                         <a href="#">
-                            <img src="assets/icons/physics.svg" alt="Physics" >
+                            <img src="assets/icons/physics.svg" alt="Physics" width="48px" height="48px">
                         </a>
                         <h2>Physics</h2>
                     </li>
@@ -97,16 +117,18 @@
                             <div class="item-progress">
                                 <div class="percentage-completed not-complete"></div>
                                 <p>0/100</p>
-                                <a href="#"><img src="assets/icons/play-button.svg" alt="play"></a> 
+                                <a href="#"><img src="assets/icons/play-button.svg" alt="play" width="36px" height="36px"></a> 
                             </div>
                         </li>
                         <li class="progress-item-list-item">
                             <h3 class="progress-item-subcategory-title">Electromagnetism</h3>
                             <p class="progress-item-subcategory-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             <div class="item-progress">
-                                <div class="percentage-completed complete"></div>
+                                <div class="percentage-completed">
+                                    <div class="complete"></div>
+                                </div>
                                 <p>30/30</p>
-                                <img src="assets/icons/complete-check.svg" alt="completed">
+                                <img src="assets/icons/complete-check.svg" alt="completed" width="36px" height="36px">
                             </div>
                         </li>
                     </ul>
