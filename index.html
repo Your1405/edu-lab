@@ -40,7 +40,7 @@
         <aside id="profile-sidebar" hidden="true">
             <div class="sidebar-element sidebar-username">
                 <img src="assets/icons/profile.svg" width="24px" height="24px" alt="Username"> 
-                <span id="username">Youri</span>
+                <span id="username"></span>
             </div>
             <div class="sidebar-element">
                 <a href="#">
@@ -54,6 +54,7 @@
                 </a>
                 <span>Progress</span>
             </div>
+            <div class="sidebar-element" onclick="logOutUser()"><a href="#">Sign Out</a></div>
         </aside>
         <section class="search-bar">
             <h1>Let's Learn Together!</h1>
@@ -135,7 +136,11 @@
                 </li>
             </ul>
         </section>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
         <script src="scripts/app.js"></script>
         <script src="scripts/ui.js"></script>
+        <script src="scripts/authentication.js"></script>
     </body>
 </html>
