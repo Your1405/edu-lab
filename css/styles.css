@@ -119,6 +119,12 @@ form {
     padding: 0.6em 2% 0.6em 2%;
 }
 
+@media screen and ( min-width: 768px) {
+    .search-button {
+        padding: 0.65em 2% 0.6em 2%;
+    }
+}
+
 .categories-title {
     display: flex;
     justify-content: space-between;
