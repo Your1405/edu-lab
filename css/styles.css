@@ -124,7 +124,6 @@ form {
         padding: 0.65em 2% 0.6em 2%;
     }
 }
-
 .categories-title {
     display: flex;
     justify-content: space-between;
@@ -235,7 +234,17 @@ form {
     position: relative;
     top: 1em;
 }
-
+.text-center{
+    text-align: center;
+}
+.coming-soon-svg{
+    margin-top: 3em !important;
+    width: 40vw;
+}
+.center-image{
+    margin:0 auto;
+    display: block;
+}
 /* .not-complete {
     width: 60%;
     height: 0.5em;
